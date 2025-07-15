@@ -22,29 +22,114 @@ export default function App() {
         <input type="email" placeholder='Digite seu email' className='bg-zinc-100 border-1 border-b-gray-400 rounded-sm w-full p-2' />
       </div>
 
-      
-      <p className='flex justify-center items-center text-sm sm:text-base md:text-lg '>Deseja fazer a denúncia de forma anônima?</p>
-      
-      <div className='flex justify-center items-center gap-8 '>
+      <p className='flex justify-center items-center text-sm sm:text-base md:text-lg mt-5'>Deseja fazer a denúncia de forma anônima?</p>
 
+      <div className='flex justify-center items-center gap-8 mt-2'>
         <div>
           <label htmlFor="Sim" className='text-sm sm:text-base md:text-lg'>Sim</label>
-          <input type="checkbox" name="sim" id="" className='cursor-pointer'/>
+          <input type="checkbox" name="sim" id="" className='cursor-pointer' />
         </div>
-       
+
         <div>
           <label htmlFor="Não" className='text-sm sm:text-base md:text-lg'>Não</label>
           <input type="checkbox" name="não" id="" className='cursor-pointer' />
         </div>
-        
       </div>
 
-      <div className='flex justify-center items-center text-xl font-bold'>
+      <div className='flex justify-center items-center text-xl font-bold mt-4 mb-2'>
         <h3>Informações sobre o Bullying</h3>
       </div>
-      
+
+      <div className='flex flex-col justify-center  mx-auto max-w-sm h-52 mt-3 mb-3'>
+        <label htmlFor="descrição">Descrição do ocorrido</label>
+        <input type="text" name="text" id="" placeholder='Descrição do fato' className='h-full max-h-40 bg-zinc-100 border-1 border-b-gray-400 rounded-sm p-2' />
+      </div>
+
+      <div className='flex justify-center items-center text-xl font-bold mt-4 mb-2'>
+        <h3>Tipo de Bullying:</h3>
+      </div>
+
+      <div className='flex flex-col items-center justify-center'>
+
+        <div className='flex items-center justify-center'>
+          <input type="checkbox" />
+          <label htmlFor="fisico">Físico(agressão, empurroções, etc...)</label>
+        </div>
+
+        <div className='flex items-center justify-center'>
+          <input type="checkbox" />
+          <label htmlFor="">Verbal(xingamentos, insultodos, etc...)</label>
+        </div>
+
+        <div className='flex items-center justify-center'>
+          <input type="checkbox" />
+          <label htmlFor="">Cyberbullying(mensagens ofensivas, exposição, etc...)</label>
+        </div>
+
+        <div className='flex items-center justify-center'>
+          <input type="checkbox" />
+          <label htmlFor="">Exclusão social(exclusão de grupos, isolamento, etc...)</label>
+        </div>
+
+      </div>
 
 
+      <div className='flex justify-center items-center text-xl font-bold mt-4 mb-2'>
+        <h3>Informações sobre o(s) Envolvido(s)</h3>
+      </div>
+
+      <div className='flex flex-col justify-center  mx-auto max-w-sm my-8'>
+        <label htmlFor="Nome" className='text-sm font-bold  mb-1.5'>Quem praticou o bullying?</label>
+        <input type="text" className='bg-zinc-100 border-1 border-b-gray-400 rounded-sm w-full p-2' />
+      </div>
+
+      <p className='flex justify-center items-center text-sm sm:text-base md:text-lg mt-2'>Acontece com frequência?</p>
+
+      <div className='flex justify-center items-center gap-8 mt-1 mb-4'>
+        <div>
+          <label htmlFor="Sim" className='text-sm sm:text-base md:text-lg'>Sim</label>
+          <input type="checkbox" name="sim" id="" className='cursor-pointer' />
+        </div>
+
+        <div>
+          <label htmlFor="Não" className='text-sm sm:text-base md:text-lg'>Não</label>
+          <input type="checkbox" name="não" id="" className='cursor-pointer' />
+        </div>
+      </div>
+
+
+      <p className='flex justify-center items-center text-sm sm:text-base md:text-lg mt-2'>Já denunciou antes?</p>
+
+      <div className='flex justify-center items-center gap-8 mt-1'>
+        <div>
+          <label htmlFor="Sim" className='text-sm sm:text-base md:text-lg'>Sim</label>
+          <input type="checkbox" name="sim" id="" className='cursor-pointer' />
+        </div>
+
+        <div>
+          <label htmlFor="Não" className='text-sm sm:text-base md:text-lg'>Não</label>
+          <input type="checkbox" name="não" id="" className='cursor-pointer' />
+        </div>
+      </div>
+
+
+      <div className='flex flex-col justify-center  mx-auto max-w-sm my-8'>
+        <label htmlFor="Nome" className='text-sm font-bold mb-1.5'>Local onde aconteceu?</label>
+        <input type="text" className='bg-zinc-100 border-1 border-b-gray-400 rounded-sm w-full p-2' />
+      </div>
+
+     <div className="flex items-center justify-center w-full">
+     <label for="dropzone-file" className="flex flex-col items-center justify-center w-96 h-52 border-1 bg-zinc-100  border-b-gray-100 border-dashed rounded-lg cursor-pointer hover:bg-gray-200 duration-400 ">
+        <div className="flex flex-col items-center justify-center pt-5 pb-6">
+            <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+            </svg>
+            <p className="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Clique para carregar o arquivo</span></p>
+            <p className="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (max. 10MB)</p>
+        </div>
+        <input id="dropzone-file" type="file" class="hidden" />
+    </label>
+</div>
 
     </>
   )
