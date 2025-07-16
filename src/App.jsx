@@ -27,7 +27,14 @@ export default function App() {
       </div>
 
       <p className='flex justify-center items-center text-sm sm:text-base md:text-lg mt-5'>Deseja fazer a denúncia de forma anônima?</p>
-      <div className='flex justify-center items-center gap-8 mt-2'>
+
+     
+      <div className='flex items-center justify-center ml-55'>
+        <div className='w-0 h-0 border-t-[100px] border-b-[100px] border-r-[300px] sm:border-t-[130px] sm:border-b-[130px] sm:border-r-[400px] md:border-t-[130px] md:border-b-[130px] md:border-r-[400px] border-t-transparent border-b-transparent border-r-orange-300'>
+        </div>
+      </div>
+
+      <div className='flex justify-center items-center gap-8 -mt-46 sm:-mt-63   '>
         <div>
           <label htmlFor="Sim" className='text-sm sm:text-base md:text-lg'>Sim</label>
           <input type="checkbox" name="sim" id="" className='cursor-pointer' />
@@ -86,7 +93,7 @@ export default function App() {
       </div>
 
       <div className='flex items-center justify-center -ml-78 sm:-mt-6 md:-mt-6'>
-        <div className='w-50 h-50 bg-roxo sm:w-60 sm:h-60 md:w-60 md:h-60 rounded-full'></div>
+        <div className='w-50 h-50 bg-blue-400 sm:w-60 sm:h-60 md:w-60 md:h-60 rounded-full'></div>
       </div>
 
       <p className='flex justify-center items-center text-sm sm:text-base md:text-lg -mt-55'>Acontece com frequência?</p>
